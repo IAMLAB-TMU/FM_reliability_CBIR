@@ -7,7 +7,7 @@
 # [Reliability of Foundation Models for Image Retrieval in Histopathology]()
 <!-- omit in toc -->
 
-## Cross-Scanner Reliability Evaluation Framework
+## Cross-Scanner Image Reliability Evaluation Framework
 
 a) Patch-Level Retrieval
 <p align="center">
