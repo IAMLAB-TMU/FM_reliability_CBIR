@@ -11,7 +11,7 @@
 
 a) Patch-Level Retrieval
 <p align="center">
-<img width="800" src="./Images/TMALevel_Retrieval.jpg"> 
+<img width="800" src="./Images/PatchLevel_Retrieval.jpg"> 
 </p>
 b) TMA-Level Retrieval
 <p align="center">
