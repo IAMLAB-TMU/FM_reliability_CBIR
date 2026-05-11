@@ -7,7 +7,13 @@
 # [Reliability of Foundation Models for Image Retrieval in Histopathology]()
 <!-- omit in toc -->
 
-## HistoLite SSL Framework
+## Cross-Scanner Reliability Evaluation Framework
+
+a) Patch-Level Retrieval
+<p align="center">
+<img width="800" src="./Images/TMALevel_Retrieval.jpg"> 
+</p>
+b) TMA-Level Retrieval
 <p align="center">
 <img width="800" src="./Images/TMALevel_Retrieval.jpg"> 
 </p>
