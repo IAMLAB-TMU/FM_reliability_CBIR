@@ -4,12 +4,12 @@
 
 
 <!-- omit in toc -->
-# [Lightweight Self Supervised Learning Framework for Domain Generalization in Histopathology](https://www.nature.com/articles/s41598-025-20411-0)
+# [Reliability of Foundation Models for Image Retrieval in Histopathology]()
 <!-- omit in toc -->
 
 ## HistoLite SSL Framework
 <p align="center">
-<img width="800" src="./Images/SSL_Network.png"> 
+<img width="800" src="./Images/TMALevel_Retrieval.jpg"> 
 </p>
 
 Domain Shift is a remaining challenge in histopathology image analysis and limits the reliable application in real-world clinical settings. Developing domain-generalized models is critical for ensuring robust generalization across datasets from different domains. For this, we proposed HistoLite: a lightweight, self-supervised domain-generalized representation learning framework that is both resource-efficient and customizable. HistoLite is designed to be trained on a personal computer equipped with a decent GPU, making it accessible for researchers and institutions with limited resources.
