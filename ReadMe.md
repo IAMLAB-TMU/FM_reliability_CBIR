@@ -25,16 +25,26 @@ Ensuring fairness and explainability is essential for the development of ethical
 <br>
 Patch_Level_Search Notebook [Patch_Level_Search.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Patch_Level_Search.ipynb) takes in already generated embeddings, labels and image paths from the corresponding registered patches for ID and OOD **Query** and **Archive** in order to evaluate the cross-scanner retrieval reliability.
 <br>
+**Expected input format:**
 ```
-Expected input format:
-**ID and OOD Query:**
-── ID-All_Test_Embeds / Labels / file_paths               | ── OOD-All_Test_Embeds / Labels / file_paths
-    ├── ID Test Patch / Label / file_path 1               |    ├── ID Test Patch / Label / file_path 1
-    ├── ID Test Patch / Label / file_path 2               |    ├── ID Test Patch / Label / file_path 2
-    ├── ID Test Patch / Label / file_path 3               |    ├── ID Test Patch / Label / file_path 3
-    .                                                     |    .
-    .                                                     |    .
-    .                                                     |    .
+ID Query:                                                     OOD Query: 
+── ID-All_Query_Embeds / Labels / file_paths                  | ── OOD-All_Query_Embeds / Labels / file_paths
+    ├── ID Query Patch / Label / file_path 1                  |    ├── OOD Query Patch / Label / file_path 1
+    ├── ID Query Patch / Label / file_path 2                  |    ├── OOD Query Patch / Label / file_path 2
+    ├── ID Query Patch / Label / file_path 3                  |    ├── OOD Query Patch / Label / file_path 3
+    .                                                         |    .
+    .                                                         |    .
+    .                                                         |    .
+
+
+ID Archive:                                                   OOD Archive: 
+── ID-All_Archive_Embeds / Labels / file_paths                | ── OOD-All_Archive_Embeds / Labels / file_paths
+    ├── ID Archive Patch / Label / file_path 1                |    ├── OOD Archive Patch / Label / file_path 1
+    ├── ID Archive Patch / Label / file_path 2                |    ├── OOD Archive Patch / Label / file_path 2
+    ├── ID Archive Patch / Label / file_path 3                |    ├── OOD Archive Patch / Label / file_path 3
+    .                                                         |    .
+    .                                                         |    .
+    .                                                         |    .
 ```
 <br>
 First, ID Query patches are matched againt the ID Archive patches to find similar patches using Euclidean, cosine, and Hammind distances.
