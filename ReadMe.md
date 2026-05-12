@@ -24,11 +24,10 @@ Ensuring fairness and explainability is essential for the development of ethical
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 <br>
 Patch_Level_Search Notebook [Patch_Level_Search.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Patch_Level_Search.ipynb) takes in already generated embeddings, labels and image paths from the corresponding registered patches for ID and OOD **Query** and **Archive** in order to evaluate the cross-scanner retrieval reliability.
-
 <br>
 ```
-Expected input format:<br>
-**ID and OOD Query:** <br>
+Expected input format:
+**ID and OOD Query:**
 ── ID-All_Test_Embeds / Labels / file_paths               | ── OOD-All_Test_Embeds / Labels / file_paths
     ├── ID Test Patch / Label / file_path 1               |    ├── ID Test Patch / Label / file_path 1
     ├── ID Test Patch / Label / file_path 2               |    ├── ID Test Patch / Label / file_path 2
@@ -36,15 +35,12 @@ Expected input format:<br>
     .                                                     |    .
     .                                                     |    .
     .                                                     |    .
-
-<br>
 ```
-
+<br>
 First, ID Query patches are matched againt the ID Archive patches to find similar patches using Euclidean, cosine, and Hammind distances.
 Second, for the cross-scanner retrieval, OOD Query Patches are matched against the ID Archive to find the most similar patches using Euclidean, cosine, and Hammind distances.
 
 <br>
-
 All the results are saved in the "current working directory".
 
 ## Slide-Level Retrieval
