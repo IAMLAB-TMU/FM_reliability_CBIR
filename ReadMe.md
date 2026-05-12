@@ -80,21 +80,21 @@ ID Query:                                                   | OOD Query:
     .                                                       |    .
 ID Archive:                                                 | OOD Archive: 
 ── ID-All_Archive_Embeds / Labels / file_paths              | ── OOD-All_Archive_Embeds / Labels / file_paths
-    ├── ID Archive Patch / Label / file_path 1              |
-    |   |── patch 1 Embeds                                  |
-    |   |── patch 2 Embeds                                  |
-    |   |── patch 3 Embeds                                  |
-    |   ....                                                |
-    ├── ID Archive Patch / Label / file_path 2              |    ├── OOD Archive Patch / Label / file_path 2
-    |   |── patch 1 Embeds                                  |
-    |   |── patch 2 Embeds                                  |
-    |   |── patch 3 Embeds                                  |
-    |   ....                                                |
-    ├── ID Archive Patch / Label / file_path 3              |    ├── OOD Archive Patch / Label / file_path 3
-    |   |── patch 1 Embeds                                  |
-    |   |── patch 2 Embeds                                  |
-    |   |── patch 3 Embeds                                  |
-    |   ....                                                |
+    ├── ID Archive Slide / Label / file_path 1              |    ├── OOD Archive Slide / Label / file_path 1
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
+    |   ....                                                |    |   ....    
+    ├── ID Archive Slide / Label / file_path 2              |    ├── OOD Archive Slide / Label / file_path 2
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
+    |   ....                                                |    |   ....    
+    ├── ID Archive Slide / Label / file_path 3              |    ├── OOD Archive Slide / Label / file_path 3
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
+    |   ....                                                |    |   ....    
     .                                                       |    .
     .                                                       |    .
     .                                                       |    .
