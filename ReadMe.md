@@ -23,6 +23,10 @@ Ensuring fairness and explainability is essential for the development of ethical
 ## Patch-Level Retrieval
 **To extract embeddings from histopathology images using the pretrained HistoLite encoder:**
 
+
+## WSI-/TMA-Level Retrieval
+**To extract embeddings from histopathology images using the pretrained HistoLite encoder:**
+
 ## Citation
 ```
 @article{shafique2026reliability,
