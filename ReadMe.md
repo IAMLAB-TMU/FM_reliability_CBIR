@@ -25,7 +25,7 @@ Ensuring fairness and explainability is essential for the development of ethical
 <br>
 Patch_Level_Search Notebook [Patch_Level_Search.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Patch_Level_Search.ipynb) takes in already generated embeddings, labels and image paths from the corresponding registered patches for ID and OOD **Query** and **Archive** in order to evaluate the cross-scanner retrieval reliability.
 <br>
-**Expected input format:**
+**Expected patch-level input format:**
 ```
 ID Query:                                                   | OOD Query: 
 ── ID-All_Query_Embeds / Labels / file_paths                | ── OOD-All_Query_Embeds / Labels / file_paths
@@ -54,6 +54,52 @@ All the results are saved in the "current working directory".
 
 ## Slide-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
+
+<br>
+**Expected slide-level input format:**
+```
+ID Query:                                                   | OOD Query: 
+── ID-All_Query_Embeds / Labels / slide_paths               | ── OOD-All_Query_Embeds / Labels / file_paths
+    ├── ID Query Slide / Label / slide_path 1               |    ├── OOD Query Slide / Label / slide_path 1
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds
+    |   ...                                                 |    |   ...  
+    ├── ID Query Slide / Label / file_path 2                |    ├── OOD Query Slide / Label / file_path 2 
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds 
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds 
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds 
+    |   ...                                                 |    |   ...     
+    ├── ID Query Slide / Label / file_path 3                |    ├── OOD Query Slide / Label / file_path 3
+    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
+    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
+    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
+    |   ....                                                |    |   ....     
+    .                                                       |    .
+    .                                                       |    .
+    .                                                       |    .
+ID Archive:                                                 | OOD Archive: 
+── ID-All_Archive_Embeds / Labels / file_paths              | ── OOD-All_Archive_Embeds / Labels / file_paths
+    ├── ID Archive Patch / Label / file_path 1              |
+    |   |── patch 1 Embeds                                  |
+    |   |── patch 2 Embeds                                  |
+    |   |── patch 3 Embeds                                  |
+    |   ....                                                |
+    ├── ID Archive Patch / Label / file_path 2              |    ├── OOD Archive Patch / Label / file_path 2
+    |   |── patch 1 Embeds                                  |
+    |   |── patch 2 Embeds                                  |
+    |   |── patch 3 Embeds                                  |
+    |   ....                                                |
+    ├── ID Archive Patch / Label / file_path 3              |    ├── OOD Archive Patch / Label / file_path 3
+    |   |── patch 1 Embeds                                  |
+    |   |── patch 2 Embeds                                  |
+    |   |── patch 3 Embeds                                  |
+    |   ....                                                |
+    .                                                       |    .
+    .                                                       |    .
+    .                                                       |    .
+```
+<br>
 
 ## Citation
 ```
