@@ -21,11 +21,11 @@ b) TMA-Level Retrieval
 Ensuring fairness and explainability is essential for the development of ethical, reliable, and effective AI systems in healthcare. Bias in AI models can contribute to disparities in clinical outcomes, challenging equity in medical decision-making. Content-Based Image Retrieval (CBIR) offers interpretable, visual tools to support diagnostic processes; however, these tools remain susceptible to biases inherent in the data. This study examines fairness and explainability in AI systems for healthcare, focusing on bias in CBIR for histopathology. Specifically, it investigates how differences between scanning devices can introduce covariate bias into Foundation Models (FMs). To enable this analysis, the authors created a unique dataset of spatially aligned histopathology images scanned by two different devices, allowing them to directly study the impact of scanner variability on FM representations.
 
 ## Patch-Level Retrieval
-**To extract embeddings from histopathology images using the pretrained HistoLite encoder:**
+**Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 
 
-## WSI-/TMA-Level Retrieval
-**To extract embeddings from histopathology images using the pretrained HistoLite encoder:**
+## Slide-Level Retrieval
+**Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 
 ## Citation
 ```
