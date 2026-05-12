@@ -27,24 +27,23 @@ Patch_Level_Search Notebook [Patch_Level_Search.ipynb](https://github.com/IAMLAB
 <br>
 **Expected input format:**
 ```
-ID Query:                                                     OOD Query: 
-── ID-All_Query_Embeds / Labels / file_paths                  | ── OOD-All_Query_Embeds / Labels / file_paths
-    ├── ID Query Patch / Label / file_path 1                  |    ├── OOD Query Patch / Label / file_path 1
-    ├── ID Query Patch / Label / file_path 2                  |    ├── OOD Query Patch / Label / file_path 2
-    ├── ID Query Patch / Label / file_path 3                  |    ├── OOD Query Patch / Label / file_path 3
-    .                                                         |    .
-    .                                                         |    .
-    .                                                         |    .
-
-
-ID Archive:                                                   OOD Archive: 
-── ID-All_Archive_Embeds / Labels / file_paths                | ── OOD-All_Archive_Embeds / Labels / file_paths
-    ├── ID Archive Patch / Label / file_path 1                |    ├── OOD Archive Patch / Label / file_path 1
-    ├── ID Archive Patch / Label / file_path 2                |    ├── OOD Archive Patch / Label / file_path 2
-    ├── ID Archive Patch / Label / file_path 3                |    ├── OOD Archive Patch / Label / file_path 3
-    .                                                         |    .
-    .                                                         |    .
-    .                                                         |    .
+ID Query:                                                   | OOD Query: 
+── ID-All_Query_Embeds / Labels / file_paths                | ── OOD-All_Query_Embeds / Labels / file_paths
+    ├── ID Query Patch / Label / file_path 1                |    ├── OOD Query Patch / Label / file_path 1
+    ├── ID Query Patch / Label / file_path 2                |    ├── OOD Query Patch / Label / file_path 2
+    ├── ID Query Patch / Label / file_path 3                |    ├── OOD Query Patch / Label / file_path 3
+    .                                                       |    .
+    .                                                       |    .
+    .                                                       |    .
+                                                            |
+ID Archive:                                                 | OOD Archive: 
+── ID-All_Archive_Embeds / Labels / file_paths              | ── OOD-All_Archive_Embeds / Labels / file_paths
+    ├── ID Archive Patch / Label / file_path 1              |    ├── OOD Archive Patch / Label / file_path 1
+    ├── ID Archive Patch / Label / file_path 2              |    ├── OOD Archive Patch / Label / file_path 2
+    ├── ID Archive Patch / Label / file_path 3              |    ├── OOD Archive Patch / Label / file_path 3
+    .                                                       |    .
+    .                                                       |    .
+    .                                                       |    .
 ```
 <br>
 First, ID Query patches are matched againt the ID Archive patches to find similar patches using Euclidean, cosine, and Hammind distances.
