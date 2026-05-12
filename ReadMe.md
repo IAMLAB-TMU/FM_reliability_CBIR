@@ -54,7 +54,7 @@ All the results are saved in the "current working directory".
 
 ## Slide-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
-
+sad
 <br>
 **Expected slide-level input format:**
 ```
