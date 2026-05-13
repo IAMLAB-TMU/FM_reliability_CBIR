@@ -60,18 +60,18 @@ All the results are saved in the "current working directory".
 **Expected slide-level input format:**
 ```
 ScannerA Slides:
-── ScannerA-All_Query_Embeds / Labels / file_paths
-    ├── ScannerA Query Slide / Label / slide_path 1
+── ScannerA-All_Slides_Embeds / Labels / file_paths
+    ├── ScannerA Slide / Label / slide_path 1
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
     |   ...
-    ├── ScannerA Query Slide / Label / slide_path 2
+    ├── ScannerA Slide / Label / slide_path 2
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
     |   ...
-    ├── ScannerA Query Slide / Label / slide_path 3
+    ├── ScannerA Slide / Label / slide_path 3
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
@@ -80,18 +80,18 @@ ScannerA Slides:
     .
     .
 ScannerB Slides:
-── ScannerB-All_Archive_Embeds / Labels / file_paths
-    ├── ScannerB Archive Slide / Label / slide_path 1
+── ScannerB-All_Slides_Embeds / Labels / file_paths
+    ├── ScannerB Slide / Label / slide_path 1
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
     |   ....
-    ├── ScannerB Archive Slide / Label / slide_path 2
+    ├── ScannerB Slide / Label / slide_path 2
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
     |   ....
-    ├── ScannerB Archive Slide / Label / slide_path 3
+    ├── ScannerB Slide / Label / slide_path 3
     |   |── patch 1 Embeds
     |   |── patch 2 Embeds
     |   |── patch 3 Embeds
