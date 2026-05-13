@@ -101,7 +101,11 @@ ID Archive:                                                 | OOD Archive:
     .                                                       |    .
 ```
 <br>
-
+For TMA/Slide level evaluation, leave-one-patient-out evaluation is used to go over all the data. For TMA, we used all the available patches to perform search and retrieval.
+<br>
+```Optional:``` For Whole Slide, Yottixel mosaic [Generate_Mosaic.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic.ipynb) can be used to get coordinates for the selected patches, and the coordinates are used to get embeddings from the registered slides from both scanners using [Generate_Mosaic_Embeds.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic_Embeds.ipynb).
+<br>
+All the results are saved in the "current working directory".
 ## Citation
 ```
 @article{shafique2026reliability,
