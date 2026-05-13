@@ -27,20 +27,20 @@ Ensuring fairness and explainability is essential for the development of ethical
 <br>
 **Expected patch-level input format:**
 ```
-ID Query:                                                   | OOD Query: 
-── ID-All_Query_Embeds / Labels / file_paths                | ── OOD-All_Query_Embeds / Labels / file_paths
-    ├── ID Query Patch / Label / patch_path 1               |    ├── OOD Query Patch / Label / patch_path 1
-    ├── ID Query Patch / Label / patch_path 2               |    ├── OOD Query Patch / Label / patch_path 2
-    ├── ID Query Patch / Label / patch_path 3               |    ├── OOD Query Patch / Label / patch_path 3
+ScannerA Query:                                             | ScannerB Query: 
+── ScannerA-All_Query_Embeds / Labels / file_paths          | ── ScannerB-All_Query_Embeds / Labels / file_paths
+    ├── ScannerA Query Patch / Label / patch_path 1         |    ├── ScannerB Query Patch / Label / patch_path 1
+    ├── ScannerA Query Patch / Label / patch_path 2         |    ├── ScannerB Query Patch / Label / patch_path 2
+    ├── ScannerA Query Patch / Label / patch_path 3         |    ├── ScannerB Query Patch / Label / patch_path 3
     .                                                       |    .
     .                                                       |    .
     .                                                       |    .
                                                             |
-ID Archive:                                                 | OOD Archive: 
-── ID-All_Archive_Embeds / Labels / file_paths              | ── OOD-All_Archive_Embeds / Labels / file_paths
-    ├── ID Archive Patch / Label / patch_path 1             |    ├── OOD Archive Patch / Label / patch_path 1
-    ├── ID Archive Patch / Label / patch_path 2             |    ├── OOD Archive Patch / Label / patch_path 2
-    ├── ID Archive Patch / Label / patch_path 3             |    ├── OOD Archive Patch / Label / patch_path 3
+ScannerA Archive:                                           | ScannerB Archive: 
+── ScannerA-All_Archive_Embeds / Labels / file_paths        | ── ScannerB-All_Archive_Embeds / Labels / file_paths
+    ├── ScannerA Archive Patch / Label / patch_path 1       |    ├── ScannerB Archive Patch / Label / patch_path 1
+    ├── ScannerA Archive Patch / Label / patch_path 2       |    ├── ScannerB Archive Patch / Label / patch_path 2
+    ├── ScannerA Archive Patch / Label / patch_path 3       |    ├── ScannerB Archive Patch / Label / patch_path 3
     .                                                       |    .
     .                                                       |    .
     .                                                       |    .
@@ -59,46 +59,46 @@ All the results are saved in the "current working directory".
 <br>
 **Expected slide-level input format:**
 ```
-ID Query:                                                   | OOD Query: 
-── ID-All_Query_Embeds / Labels / file_paths                | ── OOD-All_Query_Embeds / Labels / file_paths
-    ├── ID Query Slide / Label / slide_path 1               |    ├── OOD Query Slide / Label / slide_path 1
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds
-    |   ...                                                 |    |   ...  
-    ├── ID Query Slide / Label / slide_path 2               |    ├── OOD Query Slide / Label / slide_path 2 
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds 
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds 
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds 
-    |   ...                                                 |    |   ...     
-    ├── ID Query Slide / Label / slide_path 3               |    ├── OOD Query Slide / Label / slide_path 3
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
-    |   ....                                                |    |   ....     
-    .                                                       |    .
-    .                                                       |    .
-    .                                                       |    .
-ID Archive:                                                 | OOD Archive: 
-── ID-All_Archive_Embeds / Labels / file_paths              | ── OOD-All_Archive_Embeds / Labels / file_paths
-    ├── ID Archive Slide / Label / slide_path 1             |    ├── OOD Archive Slide / Label / slide_path 1
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
-    |   ....                                                |    |   ....    
-    ├── ID Archive Slide / Label / slide_path 2             |    ├── OOD Archive Slide / Label / slide_path 2
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
-    |   ....                                                |    |   ....    
-    ├── ID Archive Slide / Label / slide_path 3             |    ├── OOD Archive Slide / Label / slide_path 3
-    |   |── patch 1 Embeds                                  |    |   |── patch 1 Embeds  
-    |   |── patch 2 Embeds                                  |    |   |── patch 2 Embeds  
-    |   |── patch 3 Embeds                                  |    |   |── patch 3 Embeds  
-    |   ....                                                |    |   ....    
-    .                                                       |    .
-    .                                                       |    .
-    .                                                       |    .
+ScannerA Slides:
+── ScannerA-All_Query_Embeds / Labels / file_paths
+    ├── ScannerA Query Slide / Label / slide_path 1
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ...
+    ├── ScannerA Query Slide / Label / slide_path 2
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ...
+    ├── ScannerA Query Slide / Label / slide_path 3
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ....  
+    .
+    .
+    .
+ScannerB Slides:
+── ScannerB-All_Archive_Embeds / Labels / file_paths
+    ├── ScannerB Archive Slide / Label / slide_path 1
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ....
+    ├── ScannerB Archive Slide / Label / slide_path 2
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ....
+    ├── ScannerB Archive Slide / Label / slide_path 3
+    |   |── patch 1 Embeds
+    |   |── patch 2 Embeds
+    |   |── patch 3 Embeds
+    |   ....
+    .
+    .
+    .
 ```
 <br>
 
