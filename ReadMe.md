@@ -104,7 +104,7 @@ ScannerB Slides:
 
 For TMA/slide-level evaluation, a leave-one-patient-out cross-validation strategy was employed to ensure comprehensive assessment across the entire dataset. In the TMA setting, all available patches were utilized for retrieval and matching, with similarity quantified using the median of the minimum pairwise distances.<br>
 
-```Optional:``` For Whole Slides, Yottixel mosaic [Generate_Mosaic.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic.ipynb) can be used to get coordinates for the selected patches, and the coordinates are used to get embeddings from the registered slides from both scanners using [Generate_Mosaic_Embeds.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic_Embeds.ipynb).<br>
+```Optional:``` For whole-slide analysis, the Yottixel mosaic approach could be employed. The [Generate_Mosaic.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic.ipynb) notebook was used to obtain coordinates for the selected patches, which were subsequently utilized by [Generate_Mosaic_Embeds.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Generate_Mosaic_Embeds.ipynb) to extract embeddings from the spatially registered slides acquired from both scanners.<br>
 
 All the results are saved in the "current working directory".<br>
 
