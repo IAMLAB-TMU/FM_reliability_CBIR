@@ -55,7 +55,25 @@ All the results are saved in the "current working directory".
 ## Slide-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 <br>
-```TMA_Level_Search``` Notebook [TMA_Level_Search.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/TMA_Level_Search.ipynb) takes in already generated TMA embeddings, labels and image paths from the corresponding registered slides from two scanners in order to evaluate the cross-scanner retrieval reliability.
+```TMA_Level_Search``` Notebook [TMA_Level_Search.py](https://github.com/IAMLAB-Ryerson/FM_reliability_CBIR/blob/main/TMA_Level_Search.py) takes in already generated TMA embeddings, labels and image paths from the corresponding registered slides from two scanners in order to evaluate the cross-scanner retrieval reliability.
+<br>
+
+```
+Usage: python TMA_Level_Search.py [options]...
+
+--seed                      Set the seed number
+--ID_Data_dir               Set the data path for ID data embeddings
+--OOD_Data_dir              Set the data path for OOD data embeddings
+--csv_file_dir              Set the data path for csv file with patient information
+--output_dir                Set the output dir
+--model_name                choose the model, e.g., UNI
+--ID_Data                   Select which one is the ID data, e.g., Scanner A
+--OOD_Data                  Select which one is the OOD data, e.g., Scanner B
+--TMA_ScannerA_Thumb_dir    Set the data path for Scanner A slide thumbnails.
+--TMA_ScannerB_Thumb_dir    Set the data path for Scanner B slide thumbnails.
+
+```
+
 <br>
 **Expected slide-level input format:**
 ```
