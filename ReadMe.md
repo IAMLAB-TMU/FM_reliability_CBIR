@@ -41,7 +41,7 @@ Usage: python Patch_Level_Search.py [options]...
 --ID_Archive_Labels_dir     Set the data path for ID Archive data Labels
 --ID_Archive_Names_dir      Set the data path for ID Archive data path list
 --output_dir                Set the output dir
---model_name                choose the model, e.g., UNI
+--model_name                choose the model name, e.g., UNI
 --ID_Data                   Select which one is the ID data, e.g., Scanner A
 --OOD_Data                  Select which one is the OOD data, e.g., Scanner B
 
@@ -88,7 +88,7 @@ Usage: python TMA_Level_Search.py [options]...
 --OOD_Data_dir              Set the data path for OOD data embeddings
 --csv_file_dir              Set the data path for csv file with patient information
 --output_dir                Set the output dir
---model_name                choose the model, e.g., UNI
+--model_name                choose the model name, e.g., UNI
 --ID_Data                   Select which one is the ID data, e.g., Scanner A
 --OOD_Data                  Select which one is the OOD data, e.g., Scanner B
 --TMA_ScannerA_Thumb_dir    Set the data path for Scanner A slide thumbnails.
