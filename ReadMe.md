@@ -48,9 +48,8 @@ ScannerA Archive:                                           | ScannerB Archive:
 <br>
 First, ID Query patches are matched againt the ID Archive patches to find similar patches using Euclidean, cosine, and Hammind distances.
 Second, for the cross-scanner retrieval, OOD Query Patches are matched against the ID Archive to find the most similar patches using Euclidean, cosine, and Hammind distances.
-
 <br>
-All the results are saved in the "current working directory".
+All the results are saved in the "current working directory". <br>
 
 ## Slide-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
@@ -73,8 +72,8 @@ Usage: python TMA_Level_Search.py [options]...
 --TMA_ScannerB_Thumb_dir    Set the data path for Scanner B slide thumbnails.
 
 ```
-
 <br>
+
 **Expected slide-level input format:**
 ```
 ScannerA Slides:
