@@ -23,8 +23,31 @@ Ensuring fairness and explainability is essential for the development of ethical
 ## Patch-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 <br>
-```Patch_Level_Search``` Notebook [Patch_Level_Search.ipynb](https://github.com/IAMLAB-Ryerson/Reliability_Search-Retrieval/blob/main/Patch_Level_Search.ipynb) takes in already generated embeddings, labels and image paths from the corresponding registered patches for ID and OOD **Query** and **Archive** in order to evaluate the cross-scanner retrieval reliability.
+```Patch_Level_Search``` Python script [Patch_Level_Search.py](https://github.com/IAMLAB-Ryerson/FM_reliability_CBIR/blob/main/Patch_Level_Search.py) takes in already generated embeddings, labels and image paths from the corresponding registered patches for ID and OOD **Query** and **Archive** in order to evaluate the cross-scanner retrieval reliability.
 <br>
+
+```
+Usage: python Patch_Level_Search.py [options]...
+
+--seed                      Set the seed number
+--folds                     Number of folds of the available data
+--ID_Query_Embeds_dir       Set the data path for ID Query data embeddings
+--ID_Query_Labels_dir       Set the data path for ID Query data Labels
+--ID_Query_Names_dir        Set the data path for ID Query data path list
+--OOD_Query_Embeds_dir      Set the data path for OOD Query data embeddings
+--OOD_Query_Labels_dir      Set the data path for OOD Query data Labels
+--OOD_Query_Names_dir       Set the data path for OOD Query data path list
+--ID_Archive_Embeds_dir     Set the data path for ID Archive data embeddings
+--ID_Archive_Labels_dir     Set the data path for ID Archive data Labels
+--ID_Archive_Names_dir      Set the data path for ID Archive data path list
+--output_dir                Set the output dir
+--model_name                choose the model, e.g., UNI
+--ID_Data                   Select which one is the ID data, e.g., Scanner A
+--OOD_Data                  Select which one is the OOD data, e.g., Scanner B
+
+```
+<br>
+
 **Expected patch-level input format:**
 ```
 ScannerA Query:                                             | ScannerB Query: 
@@ -52,8 +75,8 @@ Second, for the cross-scanner retrieval, OOD Query Patches are matched against t
 All the results are saved in the "current working directory". <br>
 
 ## Slide-Level Retrieval
-**Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
-<br>
+**Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:** <br>
+
 ```TMA_Level_Search``` Python script [TMA_Level_Search.py](https://github.com/IAMLAB-Ryerson/FM_reliability_CBIR/blob/main/TMA_Level_Search.py) takes in already generated TMA embeddings, labels and image paths from the corresponding registered slides from two scanners in order to evaluate the cross-scanner retrieval reliability.
 <br>
 
