@@ -54,7 +54,7 @@ All the results are saved in the "current working directory". <br>
 ## Slide-Level Retrieval
 **Given that all the Embeddings of Spatially corresponding ID and OOD patches are already extracted and stored with corresponding ID and OOD indices:**
 <br>
-```TMA_Level_Search``` Notebook [TMA_Level_Search.py](https://github.com/IAMLAB-Ryerson/FM_reliability_CBIR/blob/main/TMA_Level_Search.py) takes in already generated TMA embeddings, labels and image paths from the corresponding registered slides from two scanners in order to evaluate the cross-scanner retrieval reliability.
+```TMA_Level_Search``` Python script [TMA_Level_Search.py](https://github.com/IAMLAB-Ryerson/FM_reliability_CBIR/blob/main/TMA_Level_Search.py) takes in already generated TMA embeddings, labels and image paths from the corresponding registered slides from two scanners in order to evaluate the cross-scanner retrieval reliability.
 <br>
 
 ```
